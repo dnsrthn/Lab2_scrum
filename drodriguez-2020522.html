@@ -1,0 +1,134 @@
+}<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #E3FEF7;
+            color: #003C43;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003C43;
+            color: #E3FEF7;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        .dropdown {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+        }
+        .dropdown button {
+            background-color: #135D66;
+            color: #E3FEF7;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #E3FEF7;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #003C43;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #77B0AA;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #135D66;
+        }
+        .card p {
+            font-size: 1rem;
+            overflow-y: auto;
+            flex: 1;
+            margin: 0;
+            color: #135D66;
+        }
+        footer {
+            background-color: #003C43;
+            color: #E3FEF7;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grupo #3</h1>
+        <div class="dropdown">
+            <button>Curriculum</button>
+            <div class="dropdown-content">
+                <a href="curriculum.html" target="_blank">Danny Rodriguez</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro-text">
+            <p>Sea la bienvenida a mi página HTML. Aquí encontrará los integrantes del Grupo #3</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h2>Integrantes</h2>
+                <p>Danny Alfredo Rodriguez Martinez</p>
+        </div>
+    </div>
+    <footer>
+        &copy; Todos los Derechos de Autor: Grupo #3
+    </footer>
+</body>
+</html>
