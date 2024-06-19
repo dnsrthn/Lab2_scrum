@@ -17,46 +17,6 @@
             color: #E3FEF7;
             padding: 1rem 0;
             text-align: center;
-            position: relative;
-        }
-        .dropdown {
-            position: absolute;
-            top: 50%;
-            right: 1rem;
-            transform: translateY(-50%);
-        }
-        .dropdown button {
-            background-color: #135D66;
-            color: #E3FEF7;
-            padding: 0.5rem 1rem;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background-color: #E3FEF7;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            border-radius: 5px;
-        }
-        .dropdown-content a {
-            color: #003C43;
-            padding: 1rem;
-            text-decoration: none;
-            display: block;
-            border-bottom: 1px solid #ddd;
-        }
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
-        .dropdown-content a:hover {
-            background-color: #77B0AA;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
         }
         .container {
             text-align: center;
@@ -65,6 +25,17 @@
         .intro-text {
             font-size: 1.2rem;
             margin-bottom: 2rem;
+        }
+        .curriculum {
+            background-color: #135D66;
+            color: #E3FEF7;
+            padding: 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .curriculum:hover {
+            background-color: #77B0AA;
         }
         footer {
             background-color: #003C43;
@@ -80,17 +51,12 @@
 <body>
     <header>
         <h1>Laboratorio</h1>
-        <div class="dropdown">
-            <button>Curriculum</button>
-            <div class="dropdown-content">
-                <a href="curriculum.html" target="_blank">Danny Rodriguez</a>
-            </div>
-        </div>
     </header>
     <div class="container">
         <div class="intro-text">
-            <p>Sea la bienvenida a mi página HTML. En la esquina superior derecha encontrará el currículum del estudiante.</p>
+            <p>Sea la bienvenida a mi página HTML. A continuación, encontrará el currículum del estudiante.</p>
         </div>
+        <a class="curriculum" href="curriculum.html" target="_blank">Ver Curriculum</a>
     </div>
     <footer>
         &copy; Todos los Derechos de Autor: Danny Alfredo Rodriguez Martinez
