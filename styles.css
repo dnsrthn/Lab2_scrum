@@ -17,7 +17,7 @@ body {
     margin: 10px;
     text-align: center;
     border-radius: 5px;
-    width: 200px;
+    width: 80%;
 }
  
 a {
@@ -27,4 +27,20 @@ a {
  
 a:hover {
     text-decoration: underline;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+ 
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+ 
+th {
+    background-color: #003C43;
 }
